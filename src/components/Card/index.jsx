@@ -1,12 +1,12 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import useNearScreen from '../../hooks/useOnScreen';
+import useOnScreen from '../../hooks/useOnScreen';
 
 import './styles.scss';
 
 const Card = ({ id, img, name, population, region, capital }) => {
   const cardRef = useRef(null);
-  const isVisible = useNearScreen(cardRef);
+  const isVisible = useOnScreen(cardRef);
 
   return (
     <div className="Card" ref={cardRef}>
