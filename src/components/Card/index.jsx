@@ -13,7 +13,7 @@ const Card = ({ id, img, name, population, region, capital }) => {
       {isVisible && (
         <Link to={`/country/${id}`}>
           <div className="Card__img">
-            <img src={img} alt="" aria-hidden="true" loading="lazy" />
+            <img src={img} alt="" aria-hidden="true" />
           </div>
           <div className="Card__details">
             <h2>{name}</h2>
