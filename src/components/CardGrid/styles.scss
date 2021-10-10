@@ -1,0 +1,13 @@
+.CardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  place-items: center;
+  row-gap: 5vw;
+  column-gap: 2.5vw;
+}
+
+@media (max-width: 860px) {
+  .CardGrid {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
